@@ -40,20 +40,20 @@ h1 {
 /* Result Section */
 #result {
     margin-top: 30px;
-    font-size: 1.1rem;
+    font-size: 1.5rem; /* Increased font size for more emphasis */
     font-weight: bold;
-    color: #434242;
-    background-color: #fff;
+    color: #5c5c5c;
+    background: linear-gradient(145deg, #fdff7f, #f2ff00); /* Gradient background for a vibrant look */
     padding: 20px;
-    border: 1px solid #333;
-    border-radius: 6px;
-    /* display: inline-block; */
+    border: 2px solid #333; 
+    border-radius: 8px; 
     width: 70%;
-    max-width: 400px;
+    max-width: 500px; 
     margin: 20px auto;
     text-align: center;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
 }
+
 #scoreboard {
     margin: 20px 0;
     font-size: 1.2rem;
@@ -65,8 +65,66 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    opacity: 0.8;
 }
+
 #reset {
     background-color: #4650bcb7;
     color: white;
 }
+
+#rock {
+    background-color: #ff2f00;
+    color: #ffffff;
+  }
+
+#rock:hover {
+    background-color: #ff6644;
+}
+
+#paper {
+    background-color: #3498DB;
+    color: #ffffff;
+  }
+
+#paper:hover {
+    background-color: #44b4ff;
+}
+
+#scissors {
+    background-color: #00c552; 
+    color: #ffffff;
+}
+
+#scissors:hover {
+    background-color: #00ff6a;
+}
+#player-score{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#computer-score{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+#reset {
+    background-color: #1e6290;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+#reset:hover {
+    background-color: #35c6ff;
+  }

@@ -40,5 +40,31 @@ const playGame = (playerChoice) => {
         <p>Computer chose: ${computerChoice}</p>
         <h2>${result}</h2>
     `;
+    updateScores(result);
     // TODO: Update the #result element with the player choice, computer choice, and result
 };
+
+let playerScore = 0;
+let computerScore = 0;
+const updateScores = (result) => {
+ if (result === "You win!") {
+ //update playerScore
+ playerScore = playerScore + 1;
+ document.getElementById("player-score").textContent = playerScore;
+ //update the textContent of tag element id# "player-score"
+ } else if (result === "Computer wins!") {
+ //update computerScore
+ computerScore = computerScore + 1;
+ document.getElementById("computer-score").textContent = computerScore;
+ //update the textContent of tag element id# "computer-score"
+ }
+ document.getElementById("reset").addEventListener("click", () => {
+    playerScore = 0;
+    computerScore = 0;
+    document.getElementById("player-score").textContent = playerScore;
+    document.getElementById("computer-score").textContent = computerScore;
+   });
+};
+//Call updateScores(result); in the playGame function
+
+
