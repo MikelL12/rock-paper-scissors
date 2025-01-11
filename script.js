@@ -63,6 +63,7 @@ const updateScores = (result) => {
     computerScore = 0;
     document.getElementById("player-score").textContent = playerScore;
     document.getElementById("computer-score").textContent = computerScore;
+    document.getElementById('result').textContent = '';
    });
 };
 //Call updateScores(result); in the playGame function
